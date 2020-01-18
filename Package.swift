@@ -3,11 +3,11 @@ import PackageDescription
 
 let package = Package(
     name: "ImageRow",
-    dependencies: [
-        .package(url: "https://github.com/xmartlabs/Eureka", from: "5.0.0")
-    ],
     products: [
         .library(name: "ImageRow", targets: ["ImageRow"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/xmartlabs/Eureka", from: "5.0.0")
     ],
     targets: [
         .target(name: "ImageRow", dependencies: ["Eureka"]),
