@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "ImageRow",
+    platforms: [
+        .iOS("9.3")
+    ],
     products: [
         .library(name: "ImageRow", targets: ["ImageRow"])
     ],
