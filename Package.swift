@@ -10,8 +10,8 @@ let package = Package(
         .package(url: "https://github.com/xmartlabs/Eureka", from: "5.0.0")
     ],
     targets: [
-        .target(name: "ImageRow", dependencies: ["Eureka"]),
-        .testTarget(name: "ImageRowTests", dependencies: ["ImageRow"])
+        .target(name: "ImageRow", dependencies: ["Eureka"], path: "Sources"),
+        .testTarget(name: "ImageRowTests", dependencies: ["ImageRow"], path: "Tests")
     ],
     swiftLanguageVersions: [.v5]
 )
