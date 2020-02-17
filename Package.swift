@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "ImageRow", targets: ["ImageRow"])
     ],
     dependencies: [
-        .package(url: "https://github.com/AndrewBennet/Eureka", from: "5.0.0")
+        .package(url: "https://github.com/xmartlabs/Eureka", from: "5.2.0")
     ],
     targets: [
         .target(name: "ImageRow", dependencies: ["Eureka"], path: "Sources"),
